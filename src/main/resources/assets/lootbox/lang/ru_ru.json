@@ -1,0 +1,16 @@
+{
+  "gui.lootbox.lootbox_gui_t1.label_lootbox_tier_1": "Лутбокс Тир 1",
+  "gui.lootbox.lootbox_gui_t3.label_loot_type_any": "Тип лута: любой",
+  "itemGroup.lootbox.lootboxes": "Лутбоксы",
+  "gui.lootbox.lootbox_gui_t3.button_open": "Открыть",
+  "gui.lootbox.lootbox_gui_t2.label_loot_type_any": "Тип лута: алмаз+",
+  "gui.lootbox.lootbox_gui_t1.button_open": "Открыть",
+  "item.lootbox.lootbox_t2": "Лутбокс Т2",
+  "gui.lootbox.lootbox_gui_t2.button_open": "Открыть",
+  "item.lootbox.lootbox_t3": "Лутбокс Т3",
+  "item.lootbox.lootbox_t1": "Лутбокс Т1",
+  "gui.lootbox.lootbox_gui_t1.label_loot_type_any": "Тип лута: топ тир",
+  "gui.lootbox.lootbox_gui_t3.label_lootbox_tier_3": "Лутбокс Тир 3",
+  "gui.lootbox.lootbox_gui_t2.label_lootbox_tier_2": "Лутбокс Тир 2",
+  "translation.key.noshulker": "У вас закончились лутбоксы такого типа."
+}

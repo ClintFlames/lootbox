@@ -1,0 +1,66 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 125,
+    "height": 72,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_open",
+          "text": "Open",
+          "onClick": {
+            "name": "LootboxOpen"
+          },
+          "width": 99,
+          "height": 20,
+          "x": 165,
+          "y": 130
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_loot_type_any",
+          "text": {
+            "fixedValue": "Loot type: top tier"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 165,
+          "y": 112
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_lootbox_tier_1",
+          "text": {
+            "fixedValue": "Lootbox Tier 1"
+          },
+          "color": {
+            "value": -43521,
+            "falpha": 0.0
+          },
+          "x": 174,
+          "y": 94
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 4,
+      "oy": 6,
+      "snapOnGrid": true
+    }
+  }
+}

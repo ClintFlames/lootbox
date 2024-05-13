@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "lootbox",
+  "version": "1.0.0",
+  "name": "lootbox",
+  "description": "Adds craftable lootboxes with chests loot tables.",
+  "authors": [
+    "ClintFlames"
+  ],
+  "contact": {
+    "homepage": "https://github.com/ClintFlames/lootbox",
+    "sources": ""
+  },
+  "license": "MIT License",
+  "icon": "assets/lootbox/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "kineticcraft.lootbox.LootboxMod"
+    ],
+    "client": [
+      "kineticcraft.lootbox.ClientInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "mixins": [
+    "lootbox.mixins.json"
+  ]
+}

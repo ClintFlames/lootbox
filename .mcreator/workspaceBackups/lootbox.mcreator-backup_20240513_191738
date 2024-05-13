@@ -1,0 +1,206 @@
+{
+  "mod_elements": [
+    {
+      "name": "Lootboxes",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lootboxes",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "LootboxT3",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lootbox_t3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lootbox/models/item/lootbox_t3.json",
+          "src/main/java/kineticcraft/lootbox/item/inventory/LootboxT3Inventory.java",
+          "src/main/java/kineticcraft/lootbox/item/LootboxT3Item.java"
+        ]
+      },
+      "path": "~/t3"
+    },
+    {
+      "name": "LootboxGuiT3",
+      "type": "gui",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lootbox_gui_t3",
+      "metadata": {
+        "files": [
+          "src/main/java/kineticcraft/lootbox/client/gui/LootboxGuiT3Screen.java",
+          "src/main/java/kineticcraft/lootbox/world/inventory/LootboxGuiT3Menu.java",
+          "src/main/java/kineticcraft/lootbox/network/LootboxGuiT3ButtonMessage.java"
+        ]
+      },
+      "path": "~/t3"
+    },
+    {
+      "name": "LootboxOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lootbox_open",
+      "metadata": {
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/kineticcraft/lootbox/procedures/LootboxOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShulkerBoxes",
+      "type": "tag",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shulker_boxes",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lootbox/tags/items/shulker_boxes.json"
+        ]
+      }
+    },
+    {
+      "name": "LootboxRecipeT3",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lootbox_recipe_t_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lootbox/recipes/lootbox_recipe_t3.json"
+        ]
+      },
+      "path": "~/t3"
+    },
+    {
+      "name": "LootboxT2",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lootbox_t2",
+      "metadata": {
+        "files": [
+          "src/main/java/kineticcraft/lootbox/item/inventory/LootboxT2Inventory.java",
+          "src/main/java/kineticcraft/lootbox/item/LootboxT2Item.java",
+          "src/main/resources/assets/lootbox/models/item/lootbox_t2.json"
+        ]
+      },
+      "path": "~/t2"
+    },
+    {
+      "name": "LootboxGuiT2",
+      "type": "gui",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lootbox_gui_t2",
+      "metadata": {
+        "files": [
+          "src/main/java/kineticcraft/lootbox/world/inventory/LootboxGuiT2Menu.java",
+          "src/main/java/kineticcraft/lootbox/network/LootboxGuiT2ButtonMessage.java",
+          "src/main/java/kineticcraft/lootbox/client/gui/LootboxGuiT2Screen.java"
+        ]
+      },
+      "path": "~/t2"
+    },
+    {
+      "name": "LootboxRecipeT2",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lootbox_recipe_t_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lootbox/recipes/lootbox_recipe_t_2.json"
+        ]
+      },
+      "path": "~/t2"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "gui.lootbox.lootbox_gui_t3.label_loot_type_any": "Loot type: any",
+      "gui.lootbox.lootbox_gui_t3.label_lootbox_tier_3": "Lootbox Tier 3",
+      "itemGroup.lootbox.lootboxes": "Lootboxes",
+      "gui.lootbox.lootbox_gui_t3.button_open": "Open",
+      "gui.lootbox.lootbox_gui_t2.label_loot_type_any": "Loot type: diamond+",
+      "gui.lootbox.lootbox_gui_t2.label_lootbox_tier_3": "Lootbox Tier 3",
+      "gui.lootbox.lootbox_gui_t2.label_lootbox_tier_2": "Lootbox Tier 2",
+      "item.lootbox.lootbox_t2": "Lootbox T2",
+      "gui.lootbox.lootbox_gui_t2.button_open": "Open",
+      "item.lootbox.lootbox_t3": "Lootbox T3"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "t3",
+        "children": []
+      },
+      {
+        "name": "t2",
+        "children": []
+      },
+      {
+        "name": "t1",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "lootbox",
+    "modName": "lootbox",
+    "version": "1.0.0",
+    "author": "ClintFlames",
+    "websiteURL": "https://discord.gg/VYz5T5xFGT",
+    "license": "MIT License",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "logo",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.19.2",
+    "credits": "Bruh",
+    "modElementsPackage": "kineticcraft.lootbox",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "lootbox:custom/lootbox_t3",
+  "textures": {
+    "1": "lootbox:blocks/lootbox",
+    "particle": "lootbox:items/lootbox"
+  }
+}
