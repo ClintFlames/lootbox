@@ -1,24 +1,13 @@
 
 package kineticcraft.lootbox.item;
 
-import net.minecraft.world.level.Level;
+import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.core.BlockPos;
+import net.minecraft.world.InteractionResult;
 
-import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
-
-import kineticcraft.lootbox.world.inventory.LootboxGuiT3Menu;
-import kineticcraft.lootbox.item.inventory.LootboxT3Inventory;
+import kineticcraft.lootbox.procedures.LootboxOpenNoGuiProcedure;
 import kineticcraft.lootbox.init.LootboxModTabs;
 
 public class LootboxT3Item extends Item {
@@ -32,28 +21,8 @@ public class LootboxT3Item extends Item {
 	}
 
 	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ItemStack itemstack = ar.getObject();
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		entity.openMenu(new ExtendedScreenHandlerFactory() {
-			@Override
-			public AbstractContainerMenu createMenu(int syncId, Inventory inventory, Player player) {
-				return new LootboxGuiT3Menu(syncId, inventory, new LootboxT3Inventory(itemstack));
-			}
-
-			@Override
-			public Component getDisplayName() {
-				return itemstack.getDisplayName();
-			}
-
-			@Override
-			public void writeScreenOpeningData(ServerPlayer player, FriendlyByteBuf buf) {
-				buf.writeBlockPos(BlockPos.ZERO);
-			}
-		});
-		return ar;
+	public InteractionResult useOn(UseOnContext context) {
+		InteractionResult retval = super.useOn(context);
+		return LootboxOpenNoGuiProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", context.getPlayer()).build());
 	}
 }

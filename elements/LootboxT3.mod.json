@@ -26,9 +26,12 @@
     "damageVsEntity": 0.0,
     "specialInfo": [],
     "hasGlow": false,
-    "guiBoundTo": "LootboxGuiT3",
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedOnBlock": {
+      "name": "LootboxOpenNoGui"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

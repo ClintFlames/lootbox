@@ -20,7 +20,6 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/lootbox/models/item/lootbox_t3.json",
-          "src/main/java/kineticcraft/lootbox/item/inventory/LootboxT3Inventory.java",
           "src/main/java/kineticcraft/lootbox/item/LootboxT3Item.java"
         ]
       },
@@ -45,6 +44,7 @@
     {
       "name": "LootboxOpen",
       "type": "procedure",
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lootbox_open",
@@ -96,7 +96,6 @@
       "registry_name": "lootbox_t2",
       "metadata": {
         "files": [
-          "src/main/java/kineticcraft/lootbox/item/inventory/LootboxT2Inventory.java",
           "src/main/java/kineticcraft/lootbox/item/LootboxT2Item.java",
           "src/main/resources/assets/lootbox/models/item/lootbox_t2.json"
         ]
@@ -143,8 +142,7 @@
       "metadata": {
         "files": [
           "src/main/java/kineticcraft/lootbox/item/LootboxT1Item.java",
-          "src/main/resources/assets/lootbox/models/item/lootbox_t1.json",
-          "src/main/java/kineticcraft/lootbox/item/inventory/LootboxT1Inventory.java"
+          "src/main/resources/assets/lootbox/models/item/lootbox_t1.json"
         ]
       },
       "path": "~/t1"
@@ -178,6 +176,26 @@
         ]
       },
       "path": "~/t1"
+    },
+    {
+      "name": "LootboxOpenNoGui",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lootbox_open_no_gui",
+      "metadata": {
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/kineticcraft/lootbox/procedures/LootboxOpenNoGuiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

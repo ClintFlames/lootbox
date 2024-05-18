@@ -1,5 +1,8 @@
 # Lootboxes
-Adds craftable lootboxes with chests loot tables. Opening a lootbox gives you shulker with random chest loot table. You can also increase chances on better loot crafting a higher tier lootbox.
+Adds craftable lootboxes with chests loot tables.
+Opening a lootbox gives you shulker with random chest loot table.
+You can also increase chances on better loot crafting a higher tier lootbox.
+To open lootbox RMB on block while sneaking.
 
 ## Obtaining
 Lootbox T3 is obtained by smithing any shulker with Nether star.
